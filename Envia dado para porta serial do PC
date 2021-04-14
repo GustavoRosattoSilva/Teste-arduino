@@ -1,3 +1,5 @@
+//Gustavo Rosatto Silva
+// Envia dado para a porta serial do PC
 int data_serial; // armazena o dado do serial
 void setup(){
   //inicia a função serial dos pinos 0 e 1 
