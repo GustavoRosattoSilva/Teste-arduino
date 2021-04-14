@@ -1,3 +1,6 @@
+//Autor: Gustavo Rosatto Silva
+// Lê dado analógico
+
 const int sensor_1 = A1; // constante que armazena o pino de entrada do sensor
 float analogic_signal = 0; // armazena o dado da entrada analógica
 void setup() {
