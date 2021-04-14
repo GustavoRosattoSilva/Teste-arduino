@@ -1,0 +1,13 @@
+int data_serial; // armazena o dado do serial
+void setup(){
+  //inicia a função serial dos pinos 0 e 1 
+  //usando a taxa 9600 bits por segundo
+  Serial.begin(9600); 
+}
+void loop() {
+  // a variavel data_serial recebe a leitura dos dados da porta serial
+  data_serial = Serial.read();
+  //essa função envia a variavel data_serial para o PC e este imprime a variável no monitor serial
+  Serial.println(data_serial);
+
+}
