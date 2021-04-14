@@ -1,0 +1,14 @@
+const int sensor_1 = A1; // constante que armazena o pino de entrada do sensor
+float analogic_signal = 0; // armazena o dado da entrada analógica
+void setup() {
+  pinMode(sensor_1, INPUT); // define o pino A1 como um input  
+  Serial.begin(9600); //inicia o pino serial usando a taxa 9600 bits por segundo
+}
+
+void loop() {
+  analogic_signal = analogRead(sensor_1); //lê o dado recebido do sensor analógico
+  Serial.println(analogic_signal); // envia para o monitor serial
+  delay(500); // delay para facilitar a visualização dos dados no monitor serial
+}
+
+// testei o código usando o site de simulação tinkercad e um potenciômetro para emular a entrada de um sensor
