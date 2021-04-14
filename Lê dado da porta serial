@@ -11,3 +11,5 @@ void loop() {
   Serial.println(data_serial);
 
 }
+//A váriavel data_serial pode armazenar qualquer coisa
+//A função que envia para o PC o dado serial é a Serial.println()
